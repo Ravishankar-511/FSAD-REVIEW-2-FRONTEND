@@ -114,10 +114,10 @@ export default function AdminDashboard() {
             {activeTab === 'overview' && (
                 <div className="animate-fade-in">
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-                        <StatsCard title="Total Users" value={users.length} icon="👥" color="blue" sub="Active accounts" />
-                        <StatsCard title="Professionals" value={professionals.length} icon="🛠️" color="green" sub="Registered pros" />
-                        <StatsCard title="Service Categories" value={categories.length} icon="🗂️" color="purple" sub="Active services" />
-                        <StatsCard title="Total Requests" value={requests.length} icon="📋" color="orange" sub="Hire requests" />
+                        <StatsCard title="Total Users" value={users.length} icon="👥" color="indigo" sub="Active accounts" />
+                        <StatsCard title="Professionals" value={professionals.length} icon="🛠️" color="emerald" sub="Registered pros" />
+                        <StatsCard title="Service Categories" value={categories.length} icon="🗂️" color="violet" sub="Active services" />
+                        <StatsCard title="Total Requests" value={requests.length} icon="📋" color="amber" sub="Hire requests" />
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-6">

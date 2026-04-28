@@ -104,8 +104,8 @@ export default function LandingPage() {
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left: Text Content */}
                     <div className="space-y-8">
-                        <h1 className="text-4xl lg:text-6xl font-extrabold text-slate-800 leading-tight">
-                            Home services at<br />your doorstep
+                        <h1 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 leading-tight">
+                            Smart Services,<br />Simplified Living
                         </h1>
 
                         {/* Search bar (mobile) */}

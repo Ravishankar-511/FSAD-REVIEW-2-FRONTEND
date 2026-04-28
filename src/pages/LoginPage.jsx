@@ -281,7 +281,7 @@ export default function LoginPage() {
                                                     <p className="font-semibold text-gray-900 capitalize">{key} Dashboard</p>
                                                     <p className="text-xs text-gray-500 truncate">{cred.email}</p>
                                                 </div>
-                                                <div className="hidden group-hover:block">
+                                                <div className="group-hover:opacity-100 transition-opacity">
                                                     <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                                     </svg>
