@@ -28,7 +28,7 @@ const PopularCategories = ({ setSelectedProfession, setSearchTerm }) => {
 
     return (
         <section className="category-section">
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#333', marginBottom: '20px' }}>
+            <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px' }}>
                 Most Popular Categories
             </h2>
             <div className="category-list">

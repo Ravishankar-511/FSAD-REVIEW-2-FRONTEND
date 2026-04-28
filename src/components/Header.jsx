@@ -28,14 +28,14 @@ const Header = () => {
     return (
         <header className="app-header">
             <Link to="/" className="app-title">
-                ProFinder
+                WorkSphere
             </Link>
             <div className="nav-links" style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                 
                 {/* Link for Professional Registration (Always visible utility link) */}
                 <Link 
                     to="/join-professional" 
-                    style={{ textDecoration: 'none', color: '#007bff', padding: '8px 0', fontWeight: 'bold' }}
+                    style={{ textDecoration: 'none', color: 'var(--primary)', padding: '8px 0', fontWeight: 'bold' }}
                 >
                     Join as Professional
                 </Link>
@@ -46,26 +46,26 @@ const Header = () => {
                         {/* Utility Links for Logged-In User */}
                         <Link 
                             to="/history" 
-                            style={{ textDecoration: 'none', color: '#333', padding: '8px 0', fontWeight: 'bold' }}
+                            style={{ textDecoration: 'none', color: 'var(--text)', padding: '8px 0', fontWeight: 'bold' }}
                         >
                             <span title="Booking History">🕒 History</span>
                         </Link>
                         
                         <Link 
                             to="/favorites" 
-                            style={{ textDecoration: 'none', color: '#333', padding: '8px 0', fontWeight: 'bold' }}
+                            style={{ textDecoration: 'none', color: 'var(--text)', padding: '8px 0', fontWeight: 'bold' }}
                         >
                             ❤️ Favorites
                         </Link>
 
                         {/* User Display and Sign Out Button */}
-                        <span style={{ fontWeight: 'bold', color: '#333', marginLeft: '10px' }}>
+                        <span style={{ fontWeight: 'bold', color: 'var(--text)', marginLeft: '10px' }}>
                             Hello, {currentUser.name.split(' ')[0]} 👋
                         </span>
                         <button 
                             onClick={handleSignOut} 
                             className="signin-btn" 
-                            style={{ backgroundColor: '#dc3545', border: '1px solid #dc3545' }}
+                            style={{ backgroundColor: 'var(--secondary)', border: '1px solid var(--secondary)' }}
                         >
                             Sign Out
                         </button>

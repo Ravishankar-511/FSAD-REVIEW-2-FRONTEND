@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <footer style={{ 
-            backgroundColor: '#333', 
+            backgroundColor: 'var(--text)', 
             color: 'white', 
             textAlign: 'center', 
             padding: '15px 0', 
@@ -22,7 +22,7 @@ const Footer = () => {
             fontSize: '14px'
         }}>
             <p style={{ margin: '0' }}>
-                &copy; {new Date().getFullYear()} ProFinder. Part of a trusted network of {totalCount}+ experts.
+                &copy; {new Date().getFullYear()} WorkSphere. Part of a trusted network of {totalCount}+ experts.
             </p>
         </footer>
     );

@@ -185,8 +185,8 @@ export default function ProfessionalRegister() {
             <div className="w-full max-w-2xl">
                 <div className="bg-white rounded-3xl shadow-2xl p-8">
                     <div className="mb-8">
-                        <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-4">S</div>
-                        <h1 className="text-3xl font-bold text-gray-900">Join ServiceConnect</h1>
+                        <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-4">W</div>
+                        <h1 className="text-3xl font-bold text-gray-900">Join WorkSphere</h1>
                         <p className="text-gray-500 mt-1">Register as a Professional</p>
                     </div>
 

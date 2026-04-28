@@ -70,9 +70,9 @@ export default function Sidebar({ open, onClose, role }) {
             {/* Brand */}
             <div className={`bg-gradient-to-br ${roleColors[role] || 'from-green-600 to-green-700'} p-5`}>
                 <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center text-white font-bold text-lg">S</div>
+                    <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center text-white font-bold text-lg">W</div>
                     <div>
-                        <h1 className="text-white font-bold text-lg leading-tight">ServiceConnect</h1>
+                        <h1 className="text-white font-bold text-lg leading-tight">WorkSphere</h1>
                         <p className="text-white/70 text-xs">{roleLabels[role]}</p>
                     </div>
                 </div>

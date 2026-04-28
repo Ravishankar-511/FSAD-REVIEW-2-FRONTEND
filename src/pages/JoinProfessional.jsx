@@ -119,8 +119,8 @@ const JoinProfessional = () => {
     return (
         <div className="signin-page-container">
             <div className="signin-form-box">
-                <h2 style={{ fontSize: '30px', fontWeight: 'bold', color: '#333', marginBottom: '20px' }}>Join Our Network</h2>
-                <p style={{ color: '#666', marginBottom: '25px' }}>Register your services to connect with clients.</p>
+                <h2 style={{ fontSize: '30px', fontWeight: 'bold', color: 'var(--text)', marginBottom: '20px' }}>Join Our Network</h2>
+                <p style={{ color: 'var(--text)', marginBottom: '25px' }}>Register your services to connect with clients.</p>
                 
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
                     

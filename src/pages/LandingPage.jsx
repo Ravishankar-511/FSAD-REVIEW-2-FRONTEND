@@ -54,8 +54,8 @@ export default function LandingPage() {
                     {/* Logo + City */}
                     <div className="flex items-center gap-4 flex-shrink-0">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">S</div>
-                            <span className="font-bold text-gray-900 text-lg hidden sm:block">ServiceConnect</span>
+                            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
+                            <span className="font-bold text-gray-900 text-lg hidden sm:block">WorkSphere</span>
                         </div>
                         <div className="hidden md:flex items-center gap-1 text-sm text-gray-600 border border-gray-200 rounded-lg px-3 py-1.5 cursor-pointer hover:border-gray-300 transition-colors">
                             <span>📍</span>
@@ -181,16 +181,16 @@ export default function LandingPage() {
                     {/* Right: Image grid */}
                     <div className="hidden lg:grid grid-cols-2 gap-3">
                         <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop" alt="Cleaning service" className="w-full h-full object-cover" />
+                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop" alt="Cleaning service" className="w-full h-full object-cover" />
                         </div>
                         <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop" alt="Repair service" className="w-full h-full object-cover" />
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop" alt="Electrical service" className="w-full h-full object-cover" />
                         </div>
                         <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Plumbing service" className="w-full h-full object-cover" />
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Plumbing service" className="w-full h-full object-cover" />
                         </div>
                         <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=300&fit=crop" alt="Electrical service" className="w-full h-full object-cover" />
+                            <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=400&h=300&fit=crop" alt="Carpentry service" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
                     {/* Logo row */}
                     <div className="flex items-center gap-2 mb-10">
-                        <div className="w-9 h-9 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">S</div>
+                        <div className="w-9 h-9 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
                         <span className="font-bold text-white text-lg leading-tight">Service<br />Connect</span>
                     </div>
 
@@ -437,7 +437,7 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <p className="text-xs text-gray-500 mb-1">* As on December 31, 2024</p>
                     <p className="text-xs text-gray-500">
-                        © Copyright {new Date().getFullYear()} ServiceConnect (formerly known as ProFinder Technologies India Limited){' '}
+                        © Copyright {new Date().getFullYear()} WorkSphere (formerly known as ProFinder Technologies India Limited){' '}
                         <span className="text-green-400">All rights reserved.</span>
                         {' '}| CIN: L74140DL2014PLC274413
                     </p>
@@ -451,7 +451,7 @@ export default function LandingPage() {
                         <div className="text-center mb-6">
                             <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-3">🔐</div>
                             <h2 className="text-2xl font-bold text-gray-900">Select Your Role</h2>
-                            <p className="text-gray-500 text-sm mt-1">Choose how you want to use ServiceConnect</p>
+                            <p className="text-gray-500 text-sm mt-1">Choose how you want to use WorkSphere</p>
                         </div>
                         <div className="space-y-3">
                             {roles.map(r => (
