@@ -301,20 +301,20 @@ export default function LandingPage() {
             </section>
 
             {/* CTA Banner */}
-            <section className="bg-gradient-to-r from-green-600 to-green-700 py-14">
+            <section className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 py-14">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-white mb-4">Ready to get started?</h2>
-                    <p className="text-green-100 mb-8">Join thousands of happy customers. Book a service in minutes.</p>
+                    <p className="text-white mb-8">Join thousands of happy customers. Book a service in minutes.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button
                             onClick={() => navigate('/login')}
-                            className="bg-white text-green-700 font-bold px-8 py-3 rounded-xl hover:bg-green-50 transition-colors shadow-lg"
+                            className="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-all duration-300"
                         >
                             Book a Service
                         </button>
                         <button
                             onClick={() => navigate('/join-professional')}
-                            className="border-2 border-white text-white font-bold px-8 py-3 rounded-xl hover:bg-white/10 transition-colors"
+                            className="border border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-indigo-600 transition-all duration-300"
                         >
                             Join as Professional
                         </button>
@@ -328,8 +328,8 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
                     {/* Logo row */}
                     <div className="flex items-center gap-2 mb-10">
-                        <div className="w-9 h-9 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
-                        <span className="font-bold text-white text-lg leading-tight">Service<br />Connect</span>
+                        <div className="w-9 h-9 bg-indigo-600 rounded-md flex items-center justify-center text-white font-bold text-sm transition-all duration-300">W</div>
+                        <span className="font-bold text-white text-lg leading-tight">WorkSphere</span>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
