@@ -170,19 +170,19 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4">
-            <div className="w-full max-w-5xl">
-                <div className="grid lg:grid-cols-2 gap-8">
+        <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+            <div className="w-full max-w-6xl">
+                <div className="grid lg:grid-cols-2 gap-12">
                     {/* Left: Login Form */}
-                    <div className="bg-white rounded-3xl shadow-2xl p-8">
+                    <div className="bg-white rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300">
                         <div className="mb-8">
-                            <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-4">W</div>
-                            <h1 className="text-3xl font-bold text-gray-900">WorkSphere</h1>
-                            <p className="text-gray-500 mt-1">Sign in to your account</p>
+                            <div className="w-16 h-16 bg-indigo-500 rounded-2xl flex items-center justify-center text-white font-bold text-3xl mb-6 shadow-lg">W</div>
+                            <h1 className="text-4xl font-bold text-slate-800">WorkSphere</h1>
+                            <p className="text-slate-600 mt-2 text-lg">Sign in to your account</p>
                         </div>
 
                         {successMessage && (
-                            <div className="mb-5 p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl text-sm font-medium">
+                            <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800 rounded-xl text-sm font-medium shadow-sm">
                                 {successMessage}
                             </div>
                         )}

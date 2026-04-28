@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary: #4CAF50;
-  --secondary: #2E7D32;
-  --background: #F5F5F5;
-  --text: #212121;
+  --bg-main: #F8FAFC;
+  --bg-section: #EEF2F7;
+  --bg-card: #FFFFFF;
+  --primary: #6366F1;
+  --text-main: #1E293B;
+  --text-secondary: #64748B;
 }
 
 @layer base {
@@ -18,49 +20,58 @@
   }
   body {
     font-family: 'Inter', sans-serif;
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-slate-50 text-slate-800;
   }
 }
 
 @layer components {
+  .app-bg {
+    @apply bg-slate-50;
+  }
+  .section-bg {
+    @apply bg-gray-100;
+  }
+  .card-bg {
+    @apply bg-white;
+  }
   .btn-primary {
-    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-5 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+    @apply bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95;
   }
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-5 rounded-xl border border-gray-200 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+    @apply bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-xl border border-gray-200 transition-all duration-300 shadow-sm hover:shadow-md active:scale-95;
   }
   .btn-danger {
-    @apply bg-green-800 hover:bg-green-900 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 active:scale-95;
+    @apply bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95;
   }
   .card {
-    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow duration-200;
+    @apply bg-white rounded-xl shadow-md border border-gray-100 p-6 hover:shadow-lg hover:scale-105 transition-all duration-300;
   }
   .input {
-    @apply w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200;
+    @apply w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200;
   }
   .badge {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
   .badge-green {
-    @apply badge bg-green-100 text-green-700;
+    @apply badge bg-indigo-100 text-indigo-700;
   }
   .badge-red {
-    @apply badge bg-green-100 text-green-700;
+    @apply badge bg-indigo-100 text-indigo-700;
   }
   .badge-yellow {
-    @apply badge bg-green-100 text-green-700;
+    @apply badge bg-indigo-100 text-indigo-700;
   }
   .badge-blue {
-    @apply badge bg-green-100 text-green-700;
+    @apply badge bg-indigo-100 text-indigo-700;
   }
   .sidebar-link {
     @apply flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 cursor-pointer;
   }
   .sidebar-link-active {
-    @apply sidebar-link bg-green-600 text-white shadow-md;
+    @apply sidebar-link bg-indigo-500 text-white shadow-md;
   }
   .sidebar-link-inactive {
-    @apply sidebar-link text-gray-600 hover:bg-green-50 hover:text-green-700;
+    @apply sidebar-link text-gray-600 hover:bg-gray-50 hover:text-gray-900;
   }
 }
 

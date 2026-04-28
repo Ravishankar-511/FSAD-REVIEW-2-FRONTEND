@@ -41,7 +41,8 @@ export default function App() {
   }
 
   return (
-    <Routes>
+    <div className="min-h-screen app-bg text-slate-800">
+      <Routes>
       <Route path="/" element={role ? <Navigate to={`/${role}`} replace /> : <LandingPage />} />
       <Route path="/login" element={role ? <Navigate to={`/${role}`} replace /> : <LoginPage />} />
       <Route path="/register" element={role ? <Navigate to={`/${role}`} replace /> : <RegisterPage />} />
@@ -98,5 +99,6 @@ export default function App() {
       {/* Fallback */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    </div>
   );
 }

@@ -26,16 +26,16 @@ const Header = () => {
     };
 
     return (
-        <header className="app-header">
+        <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
             <Link to="/" className="app-title">
                 WorkSphere
             </Link>
-            <div className="nav-links" style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+            <div className="nav-links flex gap-4 items-center">
                 
                 {/* Link for Professional Registration (Always visible utility link) */}
                 <Link 
                     to="/join-professional" 
-                    style={{ textDecoration: 'none', color: 'var(--primary)', padding: '8px 0', fontWeight: 'bold' }}
+                    className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors duration-300"
                 >
                     Join as Professional
                 </Link>
@@ -46,26 +46,25 @@ const Header = () => {
                         {/* Utility Links for Logged-In User */}
                         <Link 
                             to="/history" 
-                            style={{ textDecoration: 'none', color: 'var(--text)', padding: '8px 0', fontWeight: 'bold' }}
+                            className="text-slate-600 hover:text-slate-800 font-semibold transition-colors duration-300"
                         >
                             <span title="Booking History">🕒 History</span>
                         </Link>
                         
                         <Link 
                             to="/favorites" 
-                            style={{ textDecoration: 'none', color: 'var(--text)', padding: '8px 0', fontWeight: 'bold' }}
+                            className="text-slate-600 hover:text-slate-800 font-semibold transition-colors duration-300"
                         >
                             ❤️ Favorites
                         </Link>
 
                         {/* User Display and Sign Out Button */}
-                        <span style={{ fontWeight: 'bold', color: 'var(--text)', marginLeft: '10px' }}>
+                        <span className="font-semibold text-slate-800">
                             Hello, {currentUser.name.split(' ')[0]} 👋
                         </span>
                         <button 
                             onClick={handleSignOut} 
-                            className="signin-btn" 
-                            style={{ backgroundColor: 'var(--secondary)', border: '1px solid var(--secondary)' }}
+                            className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md"
                         >
                             Sign Out
                         </button>

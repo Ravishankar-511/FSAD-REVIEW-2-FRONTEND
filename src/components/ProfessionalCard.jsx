@@ -8,39 +8,39 @@ export default function ProfessionalCard({ professional, showHire, onHire }) {
     return (
         <div className="card group cursor-pointer" onClick={() => navigate(`/user/professional/${id}`)}>
             {/* Header */}
-            <div className="flex items-start gap-3 mb-3">
+            <div className="flex items-start gap-4 mb-4">
                 <img
                     src={avatar}
                     alt={name}
-                    className="w-14 h-14 rounded-2xl object-cover bg-gray-100 flex-shrink-0"
+                    className="w-16 h-16 rounded-xl object-cover bg-gray-100 flex-shrink-0 shadow-sm"
                 />
                 <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                        <h3 className="font-semibold text-gray-900 truncate">{name}</h3>
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                        <h3 className="font-bold text-slate-800 truncate text-lg">{name}</h3>
                         {verified && (
-                            <span className="badge-green text-[10px] px-1.5 py-0.5">✓ Verified</span>
+                            <span className="badge-green text-xs px-2 py-1">✓ Verified</span>
                         )}
                     </div>
-                    <p className="text-xs text-green-600 font-medium mt-0.5">{category}</p>
-                    <div className="flex items-center gap-1 mt-1">
+                    <p className="text-sm text-indigo-600 font-semibold">{category}</p>
+                    <div className="flex items-center gap-2 mt-2">
                         <StarRating value={rating} readonly size="sm" />
-                        <span className="text-xs text-gray-500 ml-1">{rating} ({reviews})</span>
+                        <span className="text-sm text-slate-600">{rating} ({reviews})</span>
                     </div>
                 </div>
-                <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 mt-1.5 ${available ? 'bg-green-500' : 'bg-gray-300'}`} title={available ? 'Available' : 'Busy'} />
+                <div className={`w-3 h-3 rounded-full flex-shrink-0 mt-2 ${available ? 'bg-green-500' : 'bg-gray-300'} shadow-sm`} title={available ? 'Available' : 'Busy'} />
             </div>
 
             {/* Details */}
-            <div className="flex items-center gap-3 text-xs text-gray-500 mb-3 flex-wrap">
+            <div className="flex items-center gap-4 text-sm text-slate-600 mb-4 flex-wrap">
                 <span>📍 {location}</span>
                 <span>⏱ {experience}</span>
-                <span className="font-semibold text-gray-700">{price}</span>
+                <span className="font-bold text-slate-800 ml-auto">{price}</span>
             </div>
 
             {/* Actions */}
             {showHire && (
                 <button
-                    className="btn-primary w-full text-sm py-2 mt-1"
+                    className="btn-primary w-full text-sm py-3 mt-2"
                     onClick={(e) => {
                         e.stopPropagation();
                         onHire?.();

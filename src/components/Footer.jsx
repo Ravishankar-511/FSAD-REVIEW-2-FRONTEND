@@ -14,8 +14,8 @@ const Footer = () => {
 
     return (
         <footer style={{ 
-            backgroundColor: 'var(--text)', 
-            color: 'white', 
+            backgroundColor: 'var(--bg-card)', 
+            color: 'var(--text-main)', 
             textAlign: 'center', 
             padding: '15px 0', 
             marginTop: '50px',

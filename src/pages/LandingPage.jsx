@@ -100,32 +100,32 @@ export default function LandingPage() {
             </header>
 
             {/* Hero Section */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10 lg:pt-14 lg:pb-16">
-                <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left: Text Content */}
-                    <div className="animate-slide-up">
-                        <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                    <div className="space-y-8">
+                        <h1 className="text-4xl lg:text-6xl font-extrabold text-slate-800 leading-tight">
                             Home services at<br />your doorstep
                         </h1>
 
                         {/* Search bar (mobile) */}
-                        <form onSubmit={handleSearch} className="sm:hidden flex mb-6 border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                        <form onSubmit={handleSearch} className="sm:hidden flex border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                             <input
                                 type="text"
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder="What are you looking for?"
-                                className="flex-1 px-4 py-3 text-sm outline-none text-gray-700"
+                                className="flex-1 px-4 py-4 text-sm outline-none text-slate-700"
                             />
-                            <button type="submit" className="bg-green-600 text-white px-4">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <button type="submit" className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 transition-colors duration-300">
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
                             </button>
                         </form>
 
                         {/* Desktop search pills */}
-                        <div className="hidden sm:flex mb-6">
+                        <div className="hidden sm:flex">
                             <div className="relative flex-1 max-w-md">
                                 <input
                                     type="text"
@@ -133,71 +133,71 @@ export default function LandingPage() {
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     placeholder="What are you looking for?"
                                     onKeyDown={(e) => e.key === 'Enter' && handleSearch(e)}
-                                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-green-500 text-gray-700"
+                                    className="w-full border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:ring-2 focus:ring-indigo-500 text-slate-700 transition-all duration-300"
                                 />
                             </div>
                         </div>
 
                         {/* Service Category quick buttons */}
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className="grid grid-cols-2 gap-4">
                             {serviceCategories.slice(0, 4).map(cat => (
                                 <button
                                     key={cat.id}
                                     onClick={() => handleCategoryClick(cat)}
-                                    className="text-left px-4 py-3 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-green-400 hover:bg-green-50 hover:text-green-700 transition-all duration-200 group"
+                                    className="text-left px-6 py-4 border border-gray-200 rounded-xl text-sm font-medium text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-300 hover:scale-105"
                                 >
-                                    <span className="group-hover:scale-110 inline-block transition-transform">{cat.icon}</span>
-                                    {' '}{cat.name === 'Cleaning' ? 'Bathroom & Kitchen Cleaning' : cat.name === 'Plumbing' ? 'Plumbers & Electricians' : cat.name === 'AC & Appliance' ? 'AC & Appliance Repair' : cat.name === 'Water Purifier' ? 'Water Purifier Service' : cat.name}
+                                    <span className="text-2xl mb-2 block">{cat.icon}</span>
+                                    <span className="font-semibold">{cat.name === 'Cleaning' ? 'Bathroom & Kitchen Cleaning' : cat.name === 'Plumbing' ? 'Plumbers & Electricians' : cat.name === 'AC & Appliance' ? 'AC & Appliance Repair' : cat.name === 'Water Purifier' ? 'Water Purifier Service' : cat.name}</span>
                                 </button>
                             ))}
                         </div>
 
                         {/* Stats */}
-                        <div className="flex items-center gap-8 mt-8 pt-6 border-t border-gray-100">
-                            <div className="flex items-center gap-2.5">
-                                <span className="text-2xl text-yellow-400">☆</span>
+                        <div className="flex flex-wrap items-center gap-6 lg:gap-8 pt-8 border-t border-gray-200">
+                            <div className="flex items-center gap-3">
+                                <span className="text-3xl text-yellow-400">☆</span>
                                 <div>
-                                    <p className="text-xl font-bold text-gray-900">4.8</p>
-                                    <p className="text-xs text-gray-500">Service Rating*</p>
+                                    <p className="text-2xl font-bold text-slate-800">4.8</p>
+                                    <p className="text-sm text-slate-600">Service Rating*</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2.5">
-                                <span className="text-2xl text-gray-500">👥</span>
+                            <div className="flex items-center gap-3">
+                                <span className="text-3xl text-slate-600">👥</span>
                                 <div>
-                                    <p className="text-xl font-bold text-gray-900">12M+</p>
-                                    <p className="text-xs text-gray-500">Customers Globally*</p>
+                                    <p className="text-2xl font-bold text-slate-800">12M+</p>
+                                    <p className="text-sm text-slate-600">Customers Globally*</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2.5">
-                                <span className="text-2xl text-gray-500">🔧</span>
+                            <div className="flex items-center gap-3">
+                                <span className="text-3xl text-slate-600">🔧</span>
                                 <div>
-                                    <p className="text-xl font-bold text-gray-900">50K+</p>
-                                    <p className="text-xs text-gray-500">Professionals*</p>
+                                    <p className="text-2xl font-bold text-slate-800">50K+</p>
+                                    <p className="text-sm text-slate-600">Professionals*</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Right: Image grid */}
-                    <div className="hidden lg:grid grid-cols-2 gap-3">
-                        <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop" alt="Cleaning service" className="w-full h-full object-cover" />
+                    <div className="hidden lg:grid grid-cols-2 gap-6">
+                        <div className="rounded-xl overflow-hidden h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&h=300&fit=crop" alt="Cleaning service" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                         </div>
-                        <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop" alt="Electrical service" className="w-full h-full object-cover" />
+                        <div className="rounded-xl overflow-hidden h-64 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop" alt="Electrical service" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                         </div>
-                        <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Plumbing service" className="w-full h-full object-cover" />
+                        <div className="rounded-xl overflow-hidden h-64 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Plumbing service" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                         </div>
-                        <div className="rounded-2xl overflow-hidden h-52 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=400&h=300&fit=crop" alt="Carpentry service" className="w-full h-full object-cover" />
+                        <div className="rounded-xl overflow-hidden h-64 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=400&h=300&fit=crop" alt="Carpentry service" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* All Service Categories */}
-            <section className="bg-gray-50 py-14">
+            <section className="section-bg py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between mb-8">
                         <div>
