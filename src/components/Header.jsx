@@ -28,7 +28,7 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
             <Link to="/" className="app-title">
-                WorkSphere
+                Service Connect
             </Link>
             <div className="nav-links flex gap-4 items-center">
                 

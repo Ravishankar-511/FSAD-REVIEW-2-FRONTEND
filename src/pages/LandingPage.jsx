@@ -54,8 +54,8 @@ export default function LandingPage() {
                     {/* Logo + City */}
                     <div className="flex items-center gap-4 flex-shrink-0">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
-                            <span className="font-bold text-gray-900 text-lg hidden sm:block">WorkSphere</span>
+                            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">S</div>
+                            <span className="font-bold text-gray-900 text-lg hidden sm:block">Service Connect</span>
                         </div>
                         <div className="hidden md:flex items-center gap-1 text-sm text-gray-600 border border-gray-200 rounded-lg px-3 py-1.5 cursor-pointer hover:border-gray-300 transition-colors">
                             <span>📍</span>
@@ -328,8 +328,8 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
                     {/* Logo row */}
                     <div className="flex items-center gap-2 mb-10">
-                        <div className="w-9 h-9 bg-indigo-600 rounded-md flex items-center justify-center text-white font-bold text-sm transition-all duration-300">W</div>
-                        <span className="font-bold text-white text-lg leading-tight">WorkSphere</span>
+                        <div className="w-9 h-9 bg-indigo-600 rounded-md flex items-center justify-center text-white font-bold text-sm transition-all duration-300">S</div>
+                        <span className="font-bold text-white text-lg leading-tight">Service Connect</span>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
@@ -437,7 +437,7 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <p className="text-xs text-gray-500 mb-1">* As on December 31, 2024</p>
                     <p className="text-xs text-gray-500">
-                        © Copyright {new Date().getFullYear()} WorkSphere (formerly known as ProFinder Technologies India Limited){' '}
+                        © Copyright {new Date().getFullYear()} Service Connect (formerly known as ProFinder Technologies India Limited){' '}
                         <span className="text-green-400">All rights reserved.</span>
                         {' '}| CIN: L74140DL2014PLC274413
                     </p>
@@ -451,7 +451,7 @@ export default function LandingPage() {
                         <div className="text-center mb-6">
                             <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-3">🔐</div>
                             <h2 className="text-2xl font-bold text-gray-900">Select Your Role</h2>
-                            <p className="text-gray-500 text-sm mt-1">Choose how you want to use WorkSphere</p>
+                            <p className="text-gray-500 text-sm mt-1">Choose how you want to use Service Connect</p>
                         </div>
                         <div className="space-y-3">
                             {roles.map(r => (

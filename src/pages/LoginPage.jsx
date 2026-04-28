@@ -176,8 +176,8 @@ export default function LoginPage() {
                     {/* Left: Login Form */}
                     <div className="bg-white rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300">
                         <div className="mb-8">
-                            <div className="w-16 h-16 bg-indigo-500 rounded-2xl flex items-center justify-center text-white font-bold text-3xl mb-6 shadow-lg">W</div>
-                            <h1 className="text-4xl font-bold text-slate-800">WorkSphere</h1>
+                            <div className="w-16 h-16 bg-indigo-500 rounded-2xl flex items-center justify-center text-white font-bold text-3xl mb-6 shadow-lg">S</div>
+                            <h1 className="text-4xl font-bold text-slate-800">Service Connect</h1>
                             <p className="text-slate-600 mt-2 text-lg">Sign in to your account</p>
                         </div>
 
@@ -237,7 +237,7 @@ export default function LoginPage() {
                         </form>
 
                         <div className="mt-6 text-center border-t border-gray-200 pt-6">
-                            <p className="text-sm text-gray-600 mb-3">👀 New to WorkSphere?</p>
+                            <p className="text-sm text-gray-600 mb-3">👀 New to Service Connect?</p>
                             <button
                                 onClick={() => navigate('/register')}
                                 className="text-sm font-semibold text-green-600 hover:text-green-700"

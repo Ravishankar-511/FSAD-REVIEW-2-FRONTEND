@@ -22,7 +22,7 @@ const Footer = () => {
             fontSize: '14px'
         }}>
             <p style={{ margin: '0' }}>
-                &copy; {new Date().getFullYear()} WorkSphere. Part of a trusted network of {totalCount}+ experts.
+                &copy; {new Date().getFullYear()} Service Connect. Part of a trusted network of {totalCount}+ experts.
             </p>
         </footer>
     );

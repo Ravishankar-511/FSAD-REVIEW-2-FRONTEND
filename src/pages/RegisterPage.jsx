@@ -123,9 +123,9 @@ export default function RegisterPage() {
                 <div className="bg-white rounded-3xl shadow-2xl p-8">
                     {/* Header */}
                     <div className="mb-8 text-center">
-                        <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-4 mx-auto">W</div>
+                        <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-4 mx-auto">S</div>
                         <h1 className="text-3xl font-bold text-gray-900">Create Account</h1>
-                        <p className="text-gray-500 mt-1">Join WorkSphere today</p>
+                        <p className="text-gray-500 mt-1">Join Service Connect today</p>
                     </div>
 
                     {successMessage && (
