@@ -9,11 +9,11 @@ const PopularCategories = ({ setSelectedProfession, setSearchTerm }) => {
     // Static list of top categories
     const categories = [
         { name: 'Web Developer', emoji: '💻' },
-        { name: 'Plumber', emoji: '🛠️' },
+        { name: 'Plumber', emoji: '🪠' },
         { name: 'Electrician', emoji: '⚡' },
         
         // 👈 ALL NEW POPULAR CATEGORIES
-        { name: 'Appliance Technician', emoji: '⚙️' }, 
+        { name: 'Appliance Technician', emoji: '🔧' }, 
         { name: 'Deep Cleaner', emoji: '🧼' }, 
         { name: 'Car Mechanic', emoji: '🚗' }, 
         { name: 'Graphic Designer', emoji: '🎨' },
