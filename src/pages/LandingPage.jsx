@@ -54,7 +54,7 @@ export default function LandingPage() {
                     {/* Logo + City */}
                     <div className="flex items-center gap-4 flex-shrink-0">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
+                            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">W</div>
                             <span className="font-bold text-gray-900 text-lg hidden sm:block">WorkSphere</span>
                         </div>
                         <div className="hidden md:flex items-center gap-1 text-sm text-gray-600 border border-gray-200 rounded-lg px-3 py-1.5 cursor-pointer hover:border-gray-300 transition-colors">
@@ -81,7 +81,7 @@ export default function LandingPage() {
                                 placeholder="Search for services..."
                                 className="flex-1 px-4 py-2.5 text-sm outline-none text-gray-700"
                             />
-                            <button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-4 py-2.5 transition-colors">
+                            <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2.5 transition-all duration-300">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
@@ -92,7 +92,7 @@ export default function LandingPage() {
                     {/* Login button */}
                     <button
                         onClick={() => navigate('/login')}
-                        className="bg-gray-900 hover:bg-gray-800 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors shadow-md hover:shadow-lg flex-shrink-0"
+                        className="bg-slate-800 hover:bg-slate-900 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg flex-shrink-0"
                     >
                         Login
                     </button>
